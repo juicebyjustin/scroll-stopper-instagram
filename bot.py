@@ -1,13 +1,18 @@
 from instabot import Bot
 import os
 
+# create log directory
+if os.path.isdir('Logs/') == False:
+    os.mkdir('Logs')
+
 username = os.getenv('username')
 password = os.getenv('password')
+print(username)
 
 bot = Bot()
 
-bot.login(username = "user",
-		password = "pass")
+bot.login(username = 'juicebyjustin',
+		password = '2HpNCJqmeGsg8Bnm9msuFLBFqmrUfiZxPAR7HsGGnWNFEvsw7JNiNGas2iHuhmjhWuJhAM6Je')
 
 # Recommended to put the photo
 # you want to upload in the same
